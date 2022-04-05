@@ -193,8 +193,6 @@ CREATE  TABLE IF NOT EXISTS `gestionasignaturas`.`EVALUACION` (
     ON DELETE NO ACTION
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `gestionasignaturas`.`MATRICULA`
 -- -----------------------------------------------------
@@ -266,3 +264,31 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+USE gestionasignaturas;
+INSERT INTO alumno VALUES ("12345678Z", "bq0306", "Zadkiel", "Zabaleta Medina");
+INSERT INTO convocatoria VALUES ("001", 1);
+INSERT INTO curso VALUES (1, 1);
+INSERT INTO grupo_practica VALUES(1,1);
+INSERT INTO examen VALUES("001");
+INSERT INTO grupo_clase VALUES("001");
+INSERT INTO imparte VALUES(1, "001",1);
+INSERT INTO matricula VALUES(1, "12345678Z", "001", 1);
+INSERT INTO practica VALUES("001");
+INSERT INTO profesor VALUES(1, "Pedro Pablo", "Alarc", 1);
+INSERT INTO evaluacion VALUES (1, "12345678Z",1, 1,"001", "001",5.0,6.0,8.0, 7.0,8.0, 5.0,7.0, 1, "Ordinaria", 1, 1);
+INSERT INTO tipo_evaluacion VALUES(1, 33.00, 33.00, 33.00);
+INSERT INTO tutoria VALUES(1, 1, 1, 1,"001");
+
+
+
+
+
+
+
+
+
+
+
+
+
